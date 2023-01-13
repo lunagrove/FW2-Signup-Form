@@ -23,26 +23,32 @@
                 </div>
                 <p class="legend-title">Account Info</p>
               </legend>
-              <label for="username">Name</label>
+              <label for="username" class="visually-hidden">Name</label>
               <input type="text" 
                 name="username" 
                 id="username" 
                 required 
+                placeholder="Full name..."
                 pattern="[a-zA-Z0-9]+"
                 title="Username can only contain alpha-numeric characters"
                 aria-label="Username containing only alpha-numeric characters"
               >
-              <label for="email">Email</label>
+              <label for="email" class="visually-hidden">Email</label>
               <input type="text" 
                 name="email" 
                 id="email" 
                 required 
+                placeholder="Email address..."
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 title="Invalid format for email address, must contain @ and dot"
                 aria-label="Email address in the correct format containing @ and dot"
               >
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" required>
+              <label for="password" class="visually-hidden">Password</label>
+              <input type="password"
+                name="password"
+                id="password"
+                required
+                placeholder="Password...min 8 chars">
             </fieldset>
             <fieldset>
               <legend>
@@ -51,15 +57,60 @@
                 </div>
                 <p class="legend-title">Dev Skills</p>
               </legend>
-              <label class="standalone">Programming Languages</label><br>
-              <input type="checkbox" name="html" id="html" value="html">
-              <label for="html">HTML</label>
-              <input type="checkbox" name="css" id="css" value="css">
-              <label for="css">CSS</label>
-              <input type="checkbox" name="js" id="js" value="js">
-              <label for="js">JavaScript</label>
-              <input type="checkbox" name="php" id="php" value="php">
-              <label for="php">PHP</label>
+              <table>
+                <tr>
+                  <td colspan="3">
+                    <label>Programming Languages</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" name="html" id="html" value="html">
+                    <label for="html">HTML</label>  
+                  </td>
+                  <td>
+                    <input type="checkbox" name="css" id="css" value="css">
+                    <label for="css">CSS</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" name="sass" id="sass" value="sass">
+                    <label for="css">Sass</label>
+                  </td> 
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" name="js" id="js" value="js">
+                    <label for="js">JavaScript</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" name="php" id="php" value="php">
+                    <label for="php">PHP</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" name="python" id="python" value="python">
+                    <label for="python">Python</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <label>Dev Ops</label>
+                  </td>
+                </tr>         
+                <tr>
+                  <td>
+                    <input type="checkbox" name="git" id="git" value="git">
+                    <label for="git">GIT</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" name="gulp" id="gulp" value="gulp">
+                    <label for="gulp">Gulp</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" name="webpack" id="webpack" value="webpack">
+                    <label for="webpack">Webpack</label>
+                  </td>
+                </tr>
+              </table>
             </fieldset>
             <fieldset>
               <legend>
@@ -68,7 +119,6 @@
                 </div>
                 <p class="legend-title">Experience</p>
               </legend>
-              <label class="standalone">Overall Experience</label><br>
               <input type="radio" name="experience" id="beginner" value="beginner">
               <label for="beginner">Beginner</label>
               <input type="radio" name="experience" id="intermediate" value="intermediate">
