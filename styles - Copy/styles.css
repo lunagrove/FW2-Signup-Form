@@ -8,14 +8,14 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Josefin Slab', serif;
   color: black;
 }
 
 body {
   min-height: 125vh;
-  background: rgb(249,49,22);
-  background: linear-gradient(0deg, rgba(249,49,22,1) 0%, rgba(253,198,80,1) 100%);
+  background: rgb(86,204,241);
+  background: linear-gradient(180deg, rgba(86,204,241,1) 0%, rgba(200,232,241,1) 100%);
 }
 
 main {
@@ -52,7 +52,7 @@ main {
 
 .form h2 {
   position: relative;
-  color: #153D6D;
+  color: #153C6D;
   font-size: 2.5em;
   text-shadow: 1px 2px 4px #888;
   margin-bottom: 0.7em;
@@ -87,17 +87,17 @@ main {
 }
 
 .form input:focus, .form textarea:focus, .referredby:focus {
-  border: 3px solid #FDC650 ;
-  background-color: white;
+  border: 2px solid #5FCF7F;
+  background-color: #E8EEEF;
 }
 
 .form input[type="submit"] {
-  background-color: #153D6D;
+  background-color: #5FCF7F;
   border-style: none;
   height: 45px;
   font-size: 1.2rem;
   font-weight: 600;
-  color: white;
+  color: black;
   margin-top: 10px;
 }
 
@@ -108,7 +108,7 @@ main {
   margin-bottom: 20px;
   height: 45px;
   font-size: 1.2rem;
-  color: #F93116;
+  color: black;
 }
 
 fieldset {
@@ -127,12 +127,13 @@ legend {
 }
 
 .legend-title {
+  padding-top: 5px;
   padding-left: 8px;
 }
 
 .circle {
   position: relative;
-  background-color: #153D6D;
+  background-color: #5FCF7F;
   margin: auto;
   height: 30px;
   width: 30px;
@@ -141,7 +142,7 @@ legend {
 
 .number {
   position: absolute;
-  top: 4px;
+  top: 7px;
   left: 12px;
   text-align: center;
   color: white;
