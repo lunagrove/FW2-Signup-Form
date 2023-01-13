@@ -69,8 +69,8 @@ main {
 }
 
 .form label {
-  font-weight: 700;
-  font-size: 1.2em;
+  /* font-weight: 700; */
+  font-size: 1em;
 }
 
 .form input, .form textarea, .referredby {
@@ -82,7 +82,7 @@ main {
   background-color: #E8EEEF;
   font-size: 16px;
   color: black;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   line-height: 25px;
 }
 
@@ -108,6 +108,7 @@ main {
   margin-bottom: 20px;
   height: 45px;
   font-size: 1.2rem;
+  font-weight: 900;
   color: #F93116;
 }
 
@@ -123,26 +124,26 @@ legend {
   padding: .5rem;
   font-size: 1.2rem;
   font-weight: 900;
-  margin-bottom: 0.5rem;
 }
 
 .legend-title {
   padding-left: 8px;
+  padding-top: 3px;
 }
 
 .circle {
   position: relative;
   background-color: #153D6D;
   margin: auto;
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
 }
 
 .number {
   position: absolute;
-  top: 4px;
-  left: 12px;
+  top: 6px;
+  left: 13px;
   text-align: center;
   color: white;
   font-size: 1rem;
@@ -157,8 +158,12 @@ tr {
   height: 35px;
 }
 
-tr:nth-of-type(1) tr:nth-of-type(4) {
-  font-weight: bolder;
+tr:nth-of-type(1) {
+  font-weight: 900;
+}
+
+tr:nth-of-type(4) {
+  font-weight: 900;
 }
 
 td {
